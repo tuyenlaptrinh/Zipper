@@ -124,6 +124,12 @@ class Zipper
 
         return $this;
     }
+    
+    
+    public function comment($comment = ''){
+        $this->repository->addComment($comment);
+        return $this;
+    }
 
     /**
      * Create a new phar file or open one
