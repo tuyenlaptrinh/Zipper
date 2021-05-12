@@ -75,6 +75,10 @@ class ZipRepository implements RepositoryInterface
     {
         $this->archive->deleteName($pathInArchive);
     }
+    
+    public function addComment($comment = ''){
+        $this->archive->setArchiveComment($comment);
+    }
 
     /**
      * Get the content of a file
